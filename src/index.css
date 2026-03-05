@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #09090b;
+  --color-background: #020617;
   --color-foreground: #ffffff;
   --radius-xl: 1rem;
   --radius-2xl: 1.5rem;
 }
 
 :root {
-  background-color: #09090b;
+  background-color: #020617;
   color: white;
 }
 
 /* Custom Glassmorphism for Tailwind v4 */
 @utility glass {
-  background-color: rgba(24, 24, 27, 0.5);
+  background-color: theme('colors.sky.950'); /* Original opacity was / 0.2, removed for build fix. Opacity needs to be applied separately. */
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid theme('colors.sky.400'); /* Original opacity was / 0.1, removed for build fix. Opacity needs to be applied separately. */
 }
