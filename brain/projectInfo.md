@@ -1,7 +1,10 @@
-# Project: serene-mind-connect
+# Project: my-three-ship-duel
 
 ## Summary
-Personalized online counseling page for psychiatrists, integrating Calendly for scheduling and Stripe for secure bookings.
+A 2-player Battleship game using Three.js, focusing on modular, reusable assets and DRY principles.
 
 ## Original Prompt
-Give me a page about my job (psychiatrist) that does online councaling, i want a calendar imported from calendly and a booking from stripe
+I want to make a 2 player Battleship game.
+I want to brainstorm on the concept, 
+since I want to use threejs library for the graphs ensure all assets are reusable and modular
+D. R.Y
