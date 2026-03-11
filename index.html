@@ -3,12 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viking Ship Duel</title>
+    <title>Ultimate Battleship</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="status-display">Your Turn</div>
-    <canvas id="bg"></canvas>
+    <div id="ui-container">
+        <!-- Left Drawer for Unit Details -->
+        <div id="unit-drawer" class="collapsed">
+            <div class="drawer-header">UNIT DETAILS</div>
+            <div id="unit-name">-</div>
+            <div class="stat-bar">
+                <span>HP:</span>
+                <div id="unit-hp">- / -</div>
+            </div>
+            <div class="stat-bar">
+                <span>DMG:</span>
+                <div id="unit-dmg">-</div>
+            </div>
+            <div id="unit-actions">
+                <!-- Action buttons will be added here -->
+            </div>
+        </div>
+
+        <!-- Bottom HUD -->
+        <div id="bottom-hud">
+            <div class="hud-element">
+                <div class="hud-label">Time</div>
+                <div id="turn-timer">1:30</div>
+            </div>
+            <div class="hud-element ap-display">
+                <div class="hud-label">Action Points</div>
+                <div id="action-points">3 / 3</div>
+            </div>
+            <div class="hud-element">
+                <button id="end-turn-btn">End Turn</button>
+            </div>
+        </div>
+    </div>
+    <canvas id="game-canvas"></canvas>
     <script type="importmap">
         {
             "imports": {
@@ -17,6 +52,6 @@
             }
         }
     </script>
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="src/main.js"></script>
 </body>
 </html>
