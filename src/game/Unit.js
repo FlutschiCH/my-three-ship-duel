@@ -4,7 +4,7 @@ import * as THREE from 'three';
 const LAYER_LEVELS = {
     sky: 20,
     sea: 0,
-    sub: -20,
+        sub: -20,
 };
 
 class Unit {
@@ -71,11 +71,11 @@ class Unit {
         if (this.health === 0) {
             this.isAlive = false;
             console.log(`${this.name} has been destroyed!`);
-            if (this.onDestroy) {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            if (this.onDestroy) {
                 this.onDestroy(this);
             }
-                    }
         }
     }
+}
 
 export { Unit };
